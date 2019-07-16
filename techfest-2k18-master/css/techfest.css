@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Feb, 2018, 3:11:23 PM
+    Author     : Yogesh
+*/
+
+#header{padding-bottom: 40px !important}
+#page-breadcrumb{
+  background-color: #fff !important;
+}
+
+#event-detail ul li{
+  list-style: square;
+}
+#event-detail li > ul > li{
+  list-style: circle;
+}
+
+h3.event-type{
+  float: right;
+  padding: 0.7em 0.2em;
+}
+
+div.copyright-text{
+  color: #CCC;
+}
+div.copyright-text a{color: #FFF;border-bottom: 1px dotted #FFF;}
+
+img.home-dept
+{
+  height: 180px;
+}
+
+img.sponsor
+{
+  height: 150px;
+}
+
+#home-panel{  
+  position: relative;
+}
+
+#home-panel .preloader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: -30px;
+  right: 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+#home-panel .preloader > i {
+  font-size: 48px;
+  height: 48px;
+  line-height: 48px;
+  color: #00aeef;
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+  top: 50%;
+  margin-top: -24px;
+}
+
+#home-panel::after {
+  content: "";
+  background: url(../images/home/footer.png) bottom repeat-x;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#home-panel .main-slider{
+  /*  height: 450px;*/
+}
+
+#home-panel .slider-logo {    
+  opacity: 1;
+  /*margin-top: -55px;*/
+}
+.animate-in .slider-logo {
+  -webkit-animation: bounceInDown 1500ms ease-in-out 100ms both;  
+  animation: bounceInDown 2500ms ease-in-out 100ms both;
+}
+
+/*News Bar*/
+#iFeatures {
+  z-index: 999;  
+  position: fixed;
+  width: 100%;
+  height: 53px;
+  left: 0;
+  bottom: 0px;
+  background-color: rgba(0,39,62,.85);
+}
+.ticker {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  right: 10px;
+  bottom: 0%;
+  overflow: hidden;
+}
+
+.ticker p {
+  position: relative;
+  top: 0;
+  white-space: nowrap;
+  width: auto;
+  color: white;
+  font-size: 25px;
+}
+
+.ticker a {
+  color: white;
+}
+/*News Bar End*/
+
+/*Scroll to top button*/
+
+.scrolltop {
+  z-index: 9999;
+  display:none;
+  width:100%;
+  margin:0 auto;
+  position:fixed;
+  bottom:20px;
+  right:10px; 
+}
+.scroll {
+  position:fixed;  
+  right:15px;
+  bottom:15px;
+  background:#3399ff;
+  color: #fff;
+  padding:20px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor:pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;    
+}
+.scroll:hover {
+  background:rgba(178,178,178,1.0);
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;    
+}
+.scroll:hover .fa {
+  padding-top:-10px;
+}
+.scroll .fa {
+  font-size:30px;
+  margin-top:-5px;
+  margin-left:1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;  
+}
+/*scroll to top end*/
+
+/*Testimonials*/
+.bottom .media-body h3 {
+  color: #ea2c00;
+}
+.bottom .media-body h5 {
+  margin-top: 0;
+  padding-left: 25px;
+  color: #ea2c00;
+}
+
+/*Team CSS*/
+.person-info h3 {
+  font-size: 19px;
+  color: #686868;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/*Team End*/
+
+h2.gtu:after{
+  content: 'GTU';
+  background-color: #3399ff;
+  color: white;
+  position: absolute;
+  padding:0.5em;
+  font-size: 0.5em;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: -10px;
+}

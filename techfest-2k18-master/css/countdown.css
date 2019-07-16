@@ -1,0 +1,78 @@
+/*================= FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS =================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300|Josefin+Slab:300);
+
+/*=============================== COMMON STYLES BEGIN ================================*/
+
+ul.countdown{
+  list-style:none;	
+  font-family:'Josefin Slab','Open Sans', sans-serif;
+  font-weight:300;
+  padding-left: 0;	  
+}
+ul.countdown li{  
+  text-align:center;
+  position:relative;
+  margin:0 0 0 40px;  
+}
+ul.countdown li:first-child{  
+}
+ul.countdown span{
+  font-size:50px;
+  color:#1362ce;  /* Change color of the counter */
+  line-height:1;
+}
+ul.countdown em{
+  font-size:20px;
+  color:#71a6ef;  /* Change color of the counter descriptions*/
+  font-style:normal;
+}
+
+ul.countdown .sep{
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  top: 30px;
+  background:#c4d8f4; /* Change color of the counter separator */
+}
+
+ul.countdown:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
+/*=============================== INTRO STYLES END ================================*/
+
+
+/*=============================== RESPONSIVE STYLES BEGIN ================================*/
+@media (max-width: 670px) {
+  ul.countdown span {
+    font-size:50px;
+  }
+  ul.countdown em {
+    font-size: 12px;
+  }	
+}
+@media (max-width: 480px) {
+  ul.countdown li{
+    float:none;
+    padding:0 0 10px;
+    margin:0 0 20px;
+    border-bottom:1px solid #c4d8f4;
+  }
+  ul.countdown{
+    display:inline;
+  }
+  ul.countdown li p{
+    margin:0;
+  }
+  ul.countdown span {
+    font-size: 40px;
+  }
+  ul.countdown .sep {
+    display:none;
+  }
+}
+/*=============================== RESPONSIVE STYLES END ================================*/
